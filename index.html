@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gray Rose - Coming Soon</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        .eb-garamond-uniquifier {
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
         
         body {
-            font-family: 'Inter', sans-serif;
-            background: #000;
+            background-image: url("./bg1.png") ;
+            background-size: cover;
             color: #fff;
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
+            font-family: "EB Garamond", serif;
         }
         
         /* Background with silk/fabric texture effect */
@@ -30,10 +36,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
+            /* background: 
                 radial-gradient(ellipse at top right, rgba(75, 93, 114, 0.3) 0%, transparent 50%),
                 radial-gradient(ellipse at bottom left, rgba(162, 183, 192, 0.2) 0%, transparent 50%),
-                linear-gradient(180deg, #000 0%, #0a0a0a 50%, #000 100%);
+                linear-gradient(180deg, #000 0%, #0a0a0a 50%, #000 100%); */
             z-index: -2;
         }
         
@@ -45,6 +51,7 @@
             left: 0;
             right: 0;
             display: flex;
+            background-color: #000;
             justify-content: space-between;
             align-items: center;
             padding: 2rem 3rem;
@@ -299,18 +306,19 @@
             .container {
                 flex-direction: column;
                 justify-content: center;
-                gap: 3rem;
                 padding: 8rem 2rem;
             }
             
             .left-content {
                 text-align: center;
                 max-width: 100%;
+                max-height: 300px;
             }
             
             .right-content {
                 width: 100%;
                 justify-content: center;
+                max-height: 300px;
             }
             
             .center-logo {
@@ -341,6 +349,18 @@
             .left-content h1 {
                 font-size: 2.5rem;
             }
+
+            .left-content {
+                text-align: center;
+                max-width: 100%;
+                max-height: 300px;
+            }
+            
+            .right-content {
+                width: 100%;
+                justify-content: center;
+                max-height: 300px;
+            }
             
             .newsletter-box {
                 padding: 2rem 1.5rem;
@@ -355,9 +375,8 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="#" class="logo-text">Gray Rose</a>
+        <img src="./GrayRose.png" alt="GrayRose Text Logo" style="height: 75px;"></img>
         <nav>
-            <a href="#">Home</a>
         </nav>
     </header>
     
@@ -365,27 +384,20 @@
     <div class="container">
         <!-- Left Content -->
         <div class="left-content">
-            <h1>An Exclusive Collection is Coming Soon</h1>
+            <h1>Premium Shotgun Boutique</h1>
+            <h2>Coming Soon.</h2>
         </div>
         
         <!-- Right Content - Newsletter Form -->
         <div class="right-content">
             <!-- Comment out this newsletter box to use Typeform instead -->
             <div class="newsletter-box">
-                <h2>Join our exclusive list and receive updates on our launch and private collection viewings</h2>
+                <h2>Join our exclusive list and receive updates on our launch.</h2>
                 
                 <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" placeholder="Enter your email address">
-                    <p class="form-note">⚬ Enter an email address like example@grayrose.com</p>
+                    <div data-tf-live="01K4BCH6E6Y2JEQ5BHT4GJPSRA"></div><script src="//embed.typeform.com/next/embed.js"></script>
                 </div>
-                
-                <div class="checkbox-group">
-                    <input type="checkbox" id="subscribe">
-                    <label for="subscribe">Yes, subscribe me to receive exclusive updates and private viewing invitations. *</label>
-                </div>
-                
-                <button class="submit-btn">Submit</button>
+
             </div>
             
             <!-- Uncomment this to use Typeform embed instead -->
@@ -403,13 +415,11 @@
         <div class="footer-left">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
-            <a href="#">X</a>
-            <a href="mailto:info@grayrose.com">info@grayrose.com</a>
+            <a href="mailto:sales@grayroseco.com">sales@grayroseco.com</a>
         </div>
         <div class="footer-right">
-            <p>404-555-0100<br>
-            Private Collection Showroom<br>
-            Atlanta, GA 30305</p>
+            <p>Showroom<br>
+            Atlanta, GA</p>
         </div>
     </footer>
 </body>
